@@ -21,17 +21,24 @@ const ListItems = () => {
               marginLeft: "25%",
             }}
           >
-            <input
-              type="checkbox"
-              onClick={() => dispatch({ type: "taskState", payload: task.id })}
-            />
+            <label>
+              <input
+                className="check"
+                type="checkbox"
+                onClick={() =>
+                  dispatch({ type: "taskState", payload: task.id })
+                   }
+              />
+            </label>
+
             <h5 style={{ color: "white" }}> {task.name} </h5>
             <button
               style={{
-                backgroundColor: "#0ddbaec0",
+                backgroundColor: "black",
                 borderRadius: "8px",
+                border: "solid 1px white",
                 color: "white",
-                fontWeight:"bold"
+                width: "80px",
               }}
               onClick={() => dispatch({ type: "del", payload: task.id })}
             >

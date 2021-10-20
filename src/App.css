@@ -3,7 +3,7 @@
   flex-direction: column;
   border: #ab0ddb solid 5px;
   border-radius: 20px;
-  background-color:  #d95eff;
+  background-color:  #e389ff;
   padding: 20px;
 
 
@@ -36,3 +36,8 @@
   }
 }
 
+.check{
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
